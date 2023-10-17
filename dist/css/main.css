@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url("/images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+  background-repeat: no-repeat;
+  padding: 90px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  body {
+    flex-direction: row;
+    padding: 90px 120px;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .paragraph {
+    margin: auto 70px;
+  }
+}
+
+.paragraph h1 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+@media screen and (min-width: 768px) {
+  .paragraph h1 {
+    text-align: left;
+  }
+}
+
+.paragraph p {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .paragraph p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .signup {
+    width: 700px;
+  }
+}
+
+.price {
+  background-color: hsl(248, 32%, 49%);
+  border-radius: 9px;
+  text-align: center;
+  padding: 20px 50px;
+  margin-top: 40px;
+  box-shadow: 0 8px 0 0 rgba(124, 96, 126, 0.3);
+}
+.price p {
+  color: hsl(246, 25%, 77%);
+  font-weight: 400;
+  line-height: 1.6;
+}
+.price p span {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+form {
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 0 0 rgba(124, 96, 126, 0.3);
+}
+form input {
+  margin-top: 10px;
+  height: 40px;
+  width: 100%;
+  padding-left: 10px;
+  color: hsl(246, 25%, 77%);
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.8;
+  border: 0.5px solid;
+  border-radius: 5px;
+}
+form .errorMessage {
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 74%);
+  margin-bottom: 5px;
+  float: right;
+}
+form #submit {
+  margin-top: 10px;
+  height: 45px;
+  width: 100%;
+  padding: 5px 15px;
+  background-color: hsl(154, 59%, 51%);
+  opacity: 1;
+  color: white;
+  font-weight: 400;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 0 0 rgba(49, 183, 71, 0.7);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+form p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: hsl(246, 25%, 77%);
+}
+form p .terms {
+  color: hsl(0, 100%, 74%);
+}/*# sourceMappingURL=main.css.map */

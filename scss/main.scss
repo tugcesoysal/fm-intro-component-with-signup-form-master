@@ -1,0 +1,135 @@
+@import 'config';
+
+body {
+    background-image: url('/images/bg-intro-mobile.png');
+    background-color: $red;
+    background-repeat: no-repeat;
+    padding: 90px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include media-md {
+        flex-direction: row;
+        padding: 90px 120px;
+        justify-content: space-between;
+    }
+  
+}
+
+.paragraph {
+    @include media-md {
+    margin: auto 70px;
+    }
+}
+
+.paragraph h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    @include media-md {
+        text-align: left;
+        }
+}
+
+.paragraph p {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    font-weight: 400;
+    @include media-md {
+        text-align: left;
+        }
+}
+
+.signup {
+    @include media-md {
+        width: 700px;
+    }
+}
+
+.price {
+    background-color: $blue;
+    border-radius: 9px;
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 40px;
+    box-shadow: 0 8px 0 0 rgba(124, 96, 126, 0.3);
+    
+
+    p{
+        color: $grayishBlue;
+        font-weight: 400;
+        line-height: 1.6;
+        
+        span{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 600;
+        }
+
+    }
+
+}
+
+form {
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 0 rgba(124, 96, 126, 0.3);
+
+    input {
+        margin-top: 10px;
+        height: 40px;
+        width: 100%;
+        padding-left: 10px;
+        color: $grayishBlue;
+        font-size: 0.7rem;
+        font-weight: 600;
+        opacity: 0.8;
+        border: 0.5px solid;
+        border-radius: 5px;
+    }
+
+
+    .errorMessage{
+        font-size: 0.6rem;
+        color: $red;
+        margin-bottom: 5px;
+        float: right;
+
+    }
+
+    #submit {
+        margin-top: 10px;
+        height: 45px;
+        width: 100%;
+        padding: 5px 15px;
+        background-color: $green;
+        opacity: 1;
+        color: white;
+        font-weight: 400;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 0 0 rgba(49, 183, 71, 0.7);
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.7rem;
+        color:$grayishBlue;
+
+        .terms {
+            color: $red;
+        }
+    }
+}
